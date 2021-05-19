@@ -7,7 +7,7 @@ namespace UserGreetings
         static void Main(string[] args)
         {
 			Console.Write("Введите логин: ");
-			string login = Console.ReadLine();
+			var login = Console.ReadLine();
 			var user = Login.GetUser(login);
 
             if (user != null) 
