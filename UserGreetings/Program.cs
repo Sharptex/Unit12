@@ -6,20 +6,20 @@ namespace UserGreetings
     {
         static void Main(string[] args)
         {
-			Console.Write("Введите логин: ");
-			var login = Console.ReadLine();
-			var user = Login.GetUser(login);
+            Console.Write("Введите логин: ");
+            var login = Console.ReadLine();
+            var user = Login.GetUser(login);
 
-            if (user != null) 
-			{ 
-				user.ShowGreetings(); 
-			} 
-			else 
-			{ 
-				Console.WriteLine("Неверный логин!"); 
-			}
+            if (user != null)
+            {
+                user.ShowGreetings();
+            }
+            else
+            {
+                Console.WriteLine("Неверный логин!");
+            }
 
-			Console.ReadKey();
+            Console.ReadKey();
         }
 	}
 }
